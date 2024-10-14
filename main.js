@@ -72,7 +72,7 @@ if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
 } else {
 do {
-phoneNumber = await question(`Ingrese el número de WhatsApp.\nEjemplo: +59899022028\n---> `)
+phoneNumber = await question(`Ingrese el número de WhatsApp.\nEjemplo: +59896026646\n---> `)
 phoneNumber = phoneNumber.replace(/\D/g, '')
 } while (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v)))
 rl.close()
